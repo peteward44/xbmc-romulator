@@ -1,0 +1,25 @@
+
+DONE - Store image files relative to cache directory
+DONE - Scrape developer / publisher / genre information
+DONE - create single company database merge dev / pub
+DONE - DbConnection.GetDeveloperList / GetPublisherList needs reworking due to table change
+DONE - set target image quality, step down if doesn't exist
+DONE - Use developer / publisher / genre image in listings
+DONE - when picking a rom image pick the highest quality available first
+
+get cancel working for auto scrape info when in GuigameInfoWindow
+
+USE CONFIG SCRIPT - scrape platforms so user doesn't have to manually set up config.xml
+
+allow viewing by territory
+display available territories in gui game info window
+
+use 'imageQuality' xml attrib in config.xml properly
+
+when scraping during refresh, give up after X number of failed attempts
+
+DONE - allow entering an emulator manually with no scraping for dosbox + mame and so on
+
+DONE - default cache folder if it's empty in xml
+
+add option to unzip / un-7z roms when passing onto emulator

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config>
+	<display romItemCount="10"/>
+	<scraper cacheDirectory="" imageQuality="" type=""/>
+	<datetime format="%Y-%m-%d"/>
+	<!--emulator exe_args="%ROM%" exe_file="/bin/sh" giantBombPlatformId="3" name="Gameboy" romFilter="*.*" romsPath="/mnt/hd1/roms/gameboy"/-->
+	<emulator exe_args="%ROM%" exe_file="/usr/bin/vba" giantBombPlatformId="4" name="GBA" romFilter="*.*" romsPath="C:\incoming\roms\gba"/>
+	<!--emulator exe_args="%ROM%" exe_file="/bin/sh" giantBombPlatformId="6" name="MegaDrive" romFilter="*.*" romsPath="/mnt/hd1/roms/megadrive"/>
+	<emulator exe_args="%ROM%" exe_file="/bin/sh" giantBombPlatformId="25" name="Neo Geo" romFilter="*.*" romsPath="/mnt/hd1/roms/neogeo"/-->
+	<emulator exe_args="%ROM%" exe_file="/usr/games/bsnes" giantBombPlatformId="21" name="NES" romFilter="*.*" romsPath="/C:\incoming\roms\snes"/>
+	<emulator exe_args="%ROM%" exe_file="/usr/games/bsnes" giantBombPlatformId="9" name="SNES" romFilter="*.*" romsPath="C:\incoming\roms\snes"/>
+	<emulator exe_args="%ROM%" exe_file="/usr/games/mupen64plus" giantBombPlatformId="43" name="Nintendo64" romFilter="*.*" romsPath="C:\incoming\roms\snes"/>
+	<!--emulator exe_args="%ROM%" exe_file="/bin/sh" giantBombPlatformId="52" name="NintendoDS" romFilter="*.*" romsPath="/mnt/hd1/roms/nintendods"/-->
+</config>
