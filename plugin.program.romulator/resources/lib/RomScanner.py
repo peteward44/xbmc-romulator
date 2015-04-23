@@ -110,7 +110,7 @@ def RefreshRomsBackgroundThread( emulatorName, giantBombPlatformId, romsPath, ro
 			threadDbConnection.InsertRomRecords( emulatorName, dbRows )
 			
 			# TODO: put in option to do scrape during refresh
-			isScraping = 0
+			isScraping = 1
 			
 			# if we are scraping, read the roms back out the db and scrape each one
 			if isScraping > 0:
@@ -248,7 +248,7 @@ def DetermineRomNameAndState( fullPath ):
 	
 	romName = PrepareRomName( fileNameNoExt )
 
-	print ( "Rom added : '" + romName + "' state " + str( romState ) + " territory " + str( territory ) )
+	#print ( "Rom added : '" + romName + "' state " + str( romState ) + " territory " + str( territory ) )
 	
 	return ( romName, romState, territory )
 	

@@ -1,0 +1,3 @@
+/plugin.program.romulator/resources/lib/*.pyc
+/plugin.program.romulator/resources/lib/*.pyo
+/plugin.program.romulator/resources/db/romulator.db

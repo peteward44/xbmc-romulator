@@ -31,7 +31,7 @@ else:
 
 	for emulatorType in Config.config.emulatorTypeMap:
 		totalRomsProcessed = RomScanner.RefreshRomsBackgroundThread( emulatorType[ "name" ], emulatorType[ "giantBombPlatformId" ],
-			emulatorType[ "romsPath" ], emulatorType[ "romFilter" ], refresh_roms_callback, None )
+			emulatorType[ "romsPath" ], emulatorType[ "romFilter" ], refresh_roms_callback, None, None, None )
 			
 		romPlural = "roms" if totalRomsProcessed != 1 else "rom"
 		print "\n Emulator " + emulatorType[ "name" ] + " complete, " + str( totalRomsProcessed ) + " " + romPlural + " processed"

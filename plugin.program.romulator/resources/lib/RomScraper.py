@@ -247,7 +247,7 @@ class RomScraper(object):
 		if self.TestXmlDocumentErrorStatus( xmlDocument ) == False:
 			raise Exception( "Invalid response for get rom details XML" )
 
-#		print "XML: " + text
+		#print "XML: " + text
 			
 		gameTagResultList = xmlDocument.getElementsByTagName( "results" )
 		
@@ -270,7 +270,7 @@ class RomScraper(object):
 		# similar games are map of { 'giantBombRomId', 'name' }
 		romDict[ 'similarGames' ] = self.ParseSimilarGamesData( XmlHelper.FindFirstChildNodeByTagName( gameTag, 'similar_games' ) )
 
-		romDict[ 'developers' ] = self.ParseDeveloperData( XmlHelper.FindFirstChildNodeByTagName( gameTag, 'developers' ), 'developer' )
+		romDict[ 'developers' ] = self.ParseDeveloperData( XmlHelper.FindFirstChildNodeByTagName( gameTag, 'developers' ), 'company' )
 		romDict[ 'publishers' ] = self.ParseDeveloperData( XmlHelper.FindFirstChildNodeByTagName( gameTag, 'publishers' ), 'publisher' )
 		romDict[ 'genres' ] = self.ParseDeveloperData( XmlHelper.FindFirstChildNodeByTagName( gameTag, 'genres' ), 'genre' )
 		
